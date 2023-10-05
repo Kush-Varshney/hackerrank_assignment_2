@@ -1,0 +1,30 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b[]=new int[a];
+        for(int i=0;i<a;i++){
+            b[i]=sc.nextInt();
+        }
+        for(int i=0;i<a;i++){
+            int s=0;
+            int t=b[i];
+            while(t>0){
+                if(b[i]%t==0){
+                    s++;
+                }
+                t--;
+            }
+            if(s==3){
+                System.out.println("YES");
+            }
+            else{
+                System.out.println("NO");
+            }
+        }
+    }
+}
