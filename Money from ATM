@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc =new Scanner(System.in);
+        double x=sc.nextDouble();
+        double a=sc.nextDouble();
+        if(x<a){
+        if(x%5==0){
+            Double t =a-x;
+            System.out.printf("%.2f",t-0.50);
+        }
+        else {
+            System.out.printf("%.2f",a);
+        }
+        }
+        else{
+            System.out.printf("%.2f",a);
+        }
+    }
+}
