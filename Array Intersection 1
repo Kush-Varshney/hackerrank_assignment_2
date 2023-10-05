@@ -1,0 +1,34 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       Scanner sc=new Scanner(System.in);
+       int a=sc.nextInt();
+       int b[]=new int[a];
+       boolean g=false;
+       for(int i=0;i<a;i++){
+        b[i]=sc.nextInt();
+       }
+       int c=sc.nextInt();
+       int d[]=new int[c];
+       for(int i=0;i<c;i++){
+        d[i]=sc.nextInt();
+       }
+       
+       for(int i=0;i<a;i++){
+        for(int j=0;j<c;j++){
+            g=false;
+            if(b[i]==d[j]){
+                g=true;
+                System.out.println(b[i]);
+                break;
+            }
+        }
+       }
+       if(g!=true){
+                System.out.println("-1");
+            }
+    }
+}
